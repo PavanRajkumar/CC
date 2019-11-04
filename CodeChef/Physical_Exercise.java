@@ -10,7 +10,7 @@ import java.lang.*;
 
 	    public static void main(String[] args) {
 	    	Scanner sc = new Scanner(System.in);
-	    	int T = sc.nextInt();
+	    	int T = sc.nextInt();                   //for test cases
 
 	    	for(int t=0;t<T;t++) {
 
@@ -32,13 +32,14 @@ import java.lang.*;
 	    			Karray[k] = sc.nextLong();
 
 	    		//checking for (x,y) to (a,b)=N
+          //(x,y) to N to M to K
 
 	    		double minN = Math.sqrt(Math.pow(Narray[0] - x, 2) + Math.pow(Narray[1] - y, 2));
 	    		for(int i=2;i<N*2-1;i+=2) {
 	    			double tempN = Math.sqrt(Math.pow(Narray[i] - x, 2) + Math.pow(Narray[i+1] - y, 2));
 	    			if(tempN<minN) {
 	    				minN = tempN;
-	    				a = Narray[i];
+	    				a = Narray[i];             //for storing coordinates which satisfy minimum value
 	    				b = Narray[i+1];
 	    			}
 	    		}
@@ -48,7 +49,7 @@ import java.lang.*;
 	    			double tempM = Math.sqrt(Math.pow(Marray[i] - a, 2) + Math.pow(Marray[i+1] - b, 2));
 	    			if(tempM<minM) {
 	    				minM = tempM;
-	    				long c = Marray[i];
+	    				long c = Marray[i];        //for storing coordinates which satisfy minimum value
 	    				long d = Marray[i+1];
 	    			}
 	    		}
@@ -63,17 +64,19 @@ import java.lang.*;
 	    			}
 	    		}
 
-	    		double minimumN = minN + minM + minK;
+	    		double minimum_with_N_first = minN + minM + minK;
 
 
 
+          //checking for (x,y) to (c,d)=M
+          //(x,y) to M to N to K
 
 	    		double minM2 = Math.sqrt(Math.pow(Marray[0] - x, 2) + Math.pow(Marray[1] - y, 2));
 	    		for(int i=2;i<M*2-1;i+=2) {
 	    			double tempM2 = Math.sqrt(Math.pow(Marray[i] - x, 2) + Math.pow(Marray[i+1] - y, 2));
 	    			if(tempM2<minM2) {
 	    				minM2 = tempM2;
-	    				long c2 = Marray[i];
+	    				long c2 = Marray[i];         //for storing coordinates which satisfy minimum value
 	    				long d2 = Marray[i+1];
 	    			}
 	    		}
@@ -83,7 +86,7 @@ import java.lang.*;
 	    			double tempN2 = Math.sqrt(Math.pow(Narray[i] - c2, 2) + Math.pow(Narray[i+1] - d2, 2));
 	    			if(tempN2<minN2) {
 	    				minN2 = tempN2;
-	    				a2 = Narray[i];
+	    				a2 = Narray[i];              //for storing coordinates which satisfy minimum value
 	    				b2 = Narray[i+1];
 	    			}
 	    		}
@@ -98,12 +101,12 @@ import java.lang.*;
 	    			}
 	    		}
 
-	    		double minimumM = minN2 + minM2 + minK2;
+	    		double minimum_with_M_first = minN2 + minM2 + minK2;
 
-	    		if(minimumM<minimumN)
-	    			System.out.println(minimumM);
+	    		if(minimum_with_M_first < minimum_with_N_first)
+	    			System.out.println(minimum_with_M_first);
 	    		else
-	    			System.out.println(minimumN);
+	    			System.out.println(minimum_with_N_first);
 
 
 

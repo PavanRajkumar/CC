@@ -35,7 +35,7 @@ import java.lang.*;
 
 	    		double minN = Math.sqrt(Math.pow(Narray[0] - x, 2) + Math.pow(Narray[1] - y, 2));
 	    		a = Narray[0];
-				b = Narray[1];
+				  b = Narray[1];
 	    		for(int i=2;i<N*2-1;i+=2) {
 	    			double tempN = Math.sqrt(Math.pow(Narray[i] - x, 2) + Math.pow(Narray[i+1] - y, 2));
 	    			if(tempN<minN) {
@@ -137,7 +137,7 @@ import java.lang.*;
 	    		double minimumM = minN2 + minM2 + minK2;
 	    		//System.out.println("minimum with M "+minimumM);
 
-	    		if(minimumM<minimumN)
+	    		if(minimumM<=minimumN)
 	    			System.out.println(minimumM);
 	    		else
 	    			System.out.println(minimumN);

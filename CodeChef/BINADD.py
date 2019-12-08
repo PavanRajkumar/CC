@@ -1,6 +1,4 @@
-t = int(input())
-
-while t > 0:
+def lol():
     A = input()
     B = input()
     a = int(A,2)
@@ -13,4 +11,8 @@ while t > 0:
         b = v*2
         count = count + 1
     print(count)
+
+t = int(input())
+while t > 0:
+    lol()
     t = t - 1

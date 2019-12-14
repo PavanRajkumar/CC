@@ -1,4 +1,4 @@
-//https://www.codechef.com/DEC19B/problems/CHFRAN/
+#https://www.codechef.com/DEC19B/problems/CHFRAN/
 
 def split_group(ranges):
     #print(ranges)

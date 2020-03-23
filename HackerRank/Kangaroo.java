@@ -1,15 +1,10 @@
 //https://www.hackerrank.com/challenges/kangaroo/problem
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
-import java.lang.*;
 
-public class Solution {
+
+public class Kangaroo{
 
     // Complete the kangaroo function below.
     static String kangaroo(int x1, int v1, int x2, int v2) {

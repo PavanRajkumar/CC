@@ -1,9 +1,9 @@
 //https://www.codechef.com/NOV19B/problems/HRDSEQ
 
 import java.util.*;
-
 import java.lang.*;
-	public class CodeChef{
+
+public class CodeChef{
 	    public static void main(String[] args) {
 	    	try {
 	    	Scanner sc = new Scanner(System.in);

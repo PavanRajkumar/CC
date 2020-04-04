@@ -23,7 +23,7 @@ public class COVIDLQ {
                     count++;                   
                 }
                 else if(arr[i] == 1 && flag == 1){
-                    if(count < 6){
+                    if(count < 4){
                         var = 1;
                         break;
                     }

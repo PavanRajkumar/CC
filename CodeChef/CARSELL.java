@@ -18,7 +18,10 @@ class CARSELL{
             Arrays.sort(arr,Collections.reverseOrder());
             int sum = 0;
             for(int j=0;j<N;j++){
-                sum = sum + arr[j] - j;
+                int p = arr[j] - j;
+                if(p<=0)
+                    p = 0;
+                sum = sum + p;
                 sum = sum % 1000000007;
             }
             System.out.println(sum);

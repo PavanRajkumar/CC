@@ -1,10 +1,8 @@
 //https://www.codechef.com/OCT19B/problems/MARM
 
 import java.util.*;
-import java.lang.*;
-import java.io.*;
 
-class Codechef{
+class Array_Modification_naive{
 	public static void main(String args[]) {
 
 		try {
@@ -27,10 +25,11 @@ class Codechef{
 			for(int k=0;k<=N-1;k++)
 				System.out.print(A[k] + " ");
 
-		}
+			}
+			sc.close();
 		}
 		catch(Exception e) {
 			//ignore
-		}
+		}	
 	}
 }

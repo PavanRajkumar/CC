@@ -1,6 +1,6 @@
 
 import java.util.*;
-class Codechef {
+class Operations_on_matrix_naive {
 
 	public static void main(String args[]) {
 
@@ -59,6 +59,7 @@ class Codechef {
 			}
 			System.out.println(count);
 		}
+		sc.close();
 		}
 
 		}

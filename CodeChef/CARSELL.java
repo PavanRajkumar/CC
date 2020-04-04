@@ -23,5 +23,6 @@ class CARSELL{
             }
             System.out.println(sum);
         }
+        sc.close();
     }
 }

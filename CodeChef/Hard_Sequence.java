@@ -1,9 +1,8 @@
 //https://www.codechef.com/NOV19B/problems/HRDSEQ
 
 import java.util.*;
-import java.lang.*;
 
-public class CodeChef{
+public class Hard_Sequence{
 	    public static void main(String[] args) {
 	    	try {
 	    	Scanner sc = new Scanner(System.in);
@@ -40,7 +39,8 @@ public class CodeChef{
 	    			count1++;
 	    	}
 
-	    	System.out.println(count1);
+			System.out.println(count1);
+			sc.close();
 	    	}
 	    	}
 	    	catch(Exception e) {

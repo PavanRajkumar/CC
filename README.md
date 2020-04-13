@@ -1,3 +1,2 @@
 Competitive Coding.
 
-qwerty

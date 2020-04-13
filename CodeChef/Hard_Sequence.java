@@ -2,8 +2,7 @@
 
 import java.util.*;
 
-import java.lang.*;
-	public class CodeChef{
+public class Hard_Sequence{
 	    public static void main(String[] args) {
 	    	try {
 	    	Scanner sc = new Scanner(System.in);
@@ -40,7 +39,8 @@ import java.lang.*;
 	    			count1++;
 	    	}
 
-	    	System.out.println(count1);
+			System.out.println(count1);
+			sc.close();
 	    	}
 	    	}
 	    	catch(Exception e) {

@@ -2,12 +2,12 @@
 
 import java.util.Scanner;
 // Remember that the class name should be "Main" and should be "public".
-public class Main {
-	    public static void main(String[] args) {}
+public class EnormousInputTest{
+	    public static void main(final String[] args) {}
         try{
-        Scanner sc = new Scanner(System.in);
+        final Scanner sc = new Scanner(System.in);
         long n = sc.nextLong();
-        long k = sc.nextLong();
+        final long k = sc.nextLong();
         long count = 0;
         while (n>0){
             if (sc.nextLong()%k==0){
@@ -16,6 +16,7 @@ public class Main {
             n--;
         }
         System.out.println(count);
+        sc.close();
         }
         catch(Exception e){
             return;
